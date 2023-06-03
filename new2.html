@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+  <style>
+   body {
+  
+
+
+  background: linear-gradient(rgba(0,0,0,0.35),black),url(Clean-India-Green-India.jpeg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-family: Kaushan script;
+    
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 65px;
+  margin-bottom: 190px;
+  color: #fff;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  width: 220px;
+  height: 150px;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 30px;
+  font-family: sans-serif;
+  border:1px solid  #fff;
+  font-weight: bold;
+  font-style: italic;
+  animation: reverse;
+}
+
+.button:hover {
+  background-color:ghostwhite;
+}
+.navbar{
+    width: 85%;
+    top: 5%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    top: 80%;
+    background: greenyellow;
+    position: absolute;
+    left: 0;
+    bottom: -20 px;
+    transition: 0.5s;
+    font-family: Kaushan script;
+    border: #fff;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: #36a2eb;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #ff6384;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="te.jpg" class="logo">
+            <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+  <div class="container">
+    <h1>Welcome to Wasteco...</h1>
+    <div class="button-container">
+      <a href="#" class="button">PLASTIC WASTE</a>
+      <a href="#" class="button">ELECTRONIC WASTE</a>
+      <a href="#" class="button">ORGANIC WASTE</a>
+    </div>
+  </div>
+</body>
+</html>
